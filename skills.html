@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      @media screen and (max-width: 1000px) {
+        .profile {
+          display: none;
+        }
+        .text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="hamburger">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars" style="color: whitesmoke"></i>
+        </label>
+      </div>
+      <ul class="menu" id="menu">
+        <li class="list"><a href="index.html">Home</a></li>
+        <li class="list"><a href="about.html">About</a></li>
+        <li class="list"><a href="projects.html">Projects</a></li>
+        <li class="list"><a href="certificates.html">Certificate</a></li>
+        <li class="list"><a href="skills.html">Skills</a></li>
+      </ul>
+    </div>
+    <div class="home-content">
+      <div class="text">
+        <h1>
+          My
+          <div class="highlight">skills</div>
+        </h1>
+      </div>
+      <div class="profile">
+        <div class="profile-image"><img src="images/me2.png" /></div>
+        <div class="profile-text">
+          <p>Age: 23</p>
+          <p>Civil Status: Single</p>
+          <p>Spaces or Tabs: Tabs</p>
+          <p>OS: Windows</p>
+        </div>
+      </div>
+      <div class="arrow-icon">
+        <i class="fa-solid fa-chevron-down fa-bounce"></i>
+      </div>
+    </div>
+    <div class="skill-container">
+      <div class="skill-box color-a">
+        <div class="skill-logo">
+          <img src="images/html.png" />
+        </div>
+        <div class="skill-text">
+          <h1>html</h1>
+        </div>
+      </div>
+      <div class="skill-box color-b">
+        <div class="skill-logo">
+          <img src="images/css.png" />
+        </div>
+        <div class="skill-text">
+          <h1>css</h1>
+        </div>
+      </div>
+      <div class="skill-box color-c">
+        <div class="skill-logo">
+          <img src="images/javascript.png" />
+        </div>
+        <div class="skill-text">
+          <h1>JavaScript</h1>
+        </div>
+      </div>
+      <div class="skill-box color-d">
+        <div class="skill-logo">
+          <img src="images/php.png" />
+        </div>
+        <div class="skill-text">
+          <h1>php</h1>
+        </div>
+      </div>
+      <div class="skill-box color-e">
+        <div class="skill-logo">
+          <img src="images/mysql.png" />
+        </div>
+        <div class="skill-text">
+          <h1>mysql</h1>
+        </div>
+      </div>
+      <div class="skill-box color-f">
+        <div class="skill-logo">
+          <img src="images/bootstrap.png" />
+        </div>
+        <div class="skill-text">
+          <h1>bootstrap</h1>
+        </div>
+      </div>
+      <div class="skill-box color-g">
+        <div class="skill-logo">
+          <img src="images/git.png" />
+        </div>
+        <div class="skill-text">
+          <h1>git</h1>
+        </div>
+      </div>
+      <div class="skill-box color-h">
+        <div class="skill-logo">
+          <img src="images/wordpress.png" />
+        </div>
+        <div class="skill-text">
+          <h1>wordpress</h1>
+        </div>
+      </div>
+      <div class="skill-box color-i">
+        <div class="skill-logo">
+          <img src="images/java.png" />
+        </div>
+        <div class="skill-text">
+          <h1>java</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- hamburger button js -->
+    <script src="javascript/hamburger-button.js"></script>
+  </body>
+</html>

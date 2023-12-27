@@ -1,0 +1,295 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* Arrow animation */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  color: whitesmoke;
+}
+body {
+  background-color: rgb(18, 18, 18);
+  text-transform: uppercase;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.menu {
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+}
+.list {
+  list-style-type: none;
+  padding: 20px;
+}
+.list a {
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+}
+/* Hide the checkbox */
+#check {
+  display: none;
+}
+/* Your existing styling for the hamburger icon */
+.checkbtn {
+  cursor: pointer;
+  padding: 15px;
+  display: block;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+  position: relative; /* For arrow icon */
+}
+.text-home {
+  padding: 20px;
+  margin: 10px;
+}
+.highlight {
+  display: inline-block;
+  color: lightblue;
+}
+.profile-image {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-text {
+  padding: 10px; /* Add padding for spacing */
+  margin: 5px; /* Add margin for additional spacing between elements */
+  width: 200px;
+
+  display: none;
+}
+.text,
+.profile {
+  flex: 1;
+  padding: 20px;
+}
+.profile-image img {
+  width: 500px;
+}
+.arrow-icon {
+  position: absolute; /* Relative to home-content */
+  bottom: 0;
+  font-size: 60px;
+}
+.close-button {
+  display: none;
+  position: absolute;
+}
+
+/* project.html */
+.content-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 100px;
+}
+.content-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+.content-image {
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1rem;
+}
+.content-image img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+/* color for grids */
+.color-1 {
+  background-color: #012436;
+}
+.color-2 {
+  background-color: #00304a;
+}
+/* color for skill containers */
+.color-a {
+  background-color: #963b15;
+}
+.color-b {
+  background-color: #172c80;
+}
+.color-c {
+  background-color: #bdaa2d;
+}
+.color-d {
+  background-color: #425779;
+}
+.color-e {
+  background-color: #b14a05;
+}
+.color-f {
+  background-color: #4d0a91;
+}
+.color-g {
+  background-color: #772517;
+}
+.color-h {
+  background-color: #074d6d;
+}
+.color-i {
+  background-color: #073a52;
+}
+.skill-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center; /* Center items horizontally */
+}
+.skill-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  height: 100px;
+  height: 200px;
+  border-radius: 20px;
+}
+.skill-logo img {
+  width: 100px;
+  height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .profile-image,
+  .profile-text {
+    flex: 1;
+  }
+  .profile-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-image {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+    background-color: whitesmoke;
+  }
+  .home-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  /* project.html */
+  .content-container {
+    display: grid;
+    grid-template-columns: auto;
+    height: 100px;
+  }
+  .content-image img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+  }
+  /* skill.html */
+  .skill-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  /* do not go beyond here */
+}
+
+/* for 600px */
+@media screen and (max-width: 600px) {
+  .text {
+    padding: 0;
+  }
+  .skill-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+/* for smartphones */
+@media screen and (max-width: 480px) {
+  .header {
+    display: block;
+    justify-content: center;
+  }
+
+  /* for hamburger */
+  /* Hide the checkbox */
+  .hamburger {
+    display: flex;
+    position: relative;
+  }
+  #check {
+    display: none;
+  }
+
+  /* Your existing styling for the hamburger icon */
+  .checkbtn {
+    cursor: pointer;
+    padding: 15px;
+    display: block;
+  }
+  .menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    display: block;
+  }
+  .menu.active {
+    max-height: 200px; /* Set a value large enough to accommodate your menu items */
+  }
+  .list {
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    transition: max-height 0.3s ease;
+  }
+
+  .skill-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  .close-button {
+    display: flex;
+    position: relative;
+  }
+
+  .content-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* dont go beyond here */
+}

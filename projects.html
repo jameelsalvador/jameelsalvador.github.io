@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      @media screen and (max-width: 1000px) {
+        .profile {
+          display: none;
+        }
+        .text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="hamburger">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars" style="color: whitesmoke"></i>
+        </label>
+      </div>
+      <ul class="menu" id="menu">
+        <li class="list"><a href="index.html">Home</a></li>
+        <li class="list"><a href="about.html">About</a></li>
+        <li class="list"><a href="projects.html">Projects</a></li>
+        <li class="list"><a href="certificates.html">Certificate</a></li>
+        <li class="list"><a href="skills.html">Skills</a></li>
+      </ul>
+    </div>
+    <div class="home-content">
+      <div class="text">
+        <h1>
+          My demonstration
+          <div class="highlight">project</div>
+        </h1>
+      </div>
+      <div class="profile">
+        <div class="profile-image"><img src="images/me2.png" /></div>
+        <div class="profile-text">
+          <p>Age: 23</p>
+          <p>Civil Status: Single</p>
+          <p>Spaces or Tabs: Tabs</p>
+          <p>OS: Windows</p>
+        </div>
+      </div>
+      <div class="arrow-icon">
+        <i class="fa-solid fa-chevron-down fa-bounce"></i>
+      </div>
+    </div>
+    <div class="content-container">
+      <div class="content-text color-1">
+        <p>
+          RMS of Rosario La Union <br />
+          RMS of Rosario, La Union RMS of Rosario, La Union A Web Based Record
+          Management Systems (RMS) streamline data for efficient storage and
+          secure management, ensuring compliance and supporting informed
+          decision-making in organizations
+        </p>
+      </div>
+      <div class="content-image color-1">
+        <img src="images/thesis-img.png" />
+      </div>
+    </div>
+
+    <!-- hamburger button js -->
+    <script src="javascript/hamburger-button.js"></script>
+  </body>
+</html>
