@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -17,6 +18,22 @@
           align-items: center;
         }
       }
+
+      @media screen and (max-width: 360px) {
+        .profile {
+          display: none;
+        }
+        .text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0 20px; /* Add some padding to the text content */
+        }
+        .home-content {
+          max-width: 360px;
+          margin: 100px auto; /* Center the content horizontally */
+        }
+      }
     </style>
   </head>
   <body>
@@ -29,10 +46,10 @@
       </div>
       <ul class="menu" id="menu">
         <li class="list"><a href="./">Home</a></li>
-        <li class="list"><a href="about">About</a></li>
-        <li class="list"><a href="projects">Projects</a></li>
-        <li class="list"><a href="certificates">Certificate</a></li>
-        <li class="list"><a href="skills">Skills</a></li>
+        <li class="list"><a href="about.html">About</a></li>
+        <li class="list"><a href="projects.html">Projects</a></li>
+        <li class="list"><a href="certificates.html">Certificate</a></li>
+        <li class="list"><a href="skills.html">Skills</a></li>
       </ul>
     </div>
     <div class="home-content">
@@ -45,7 +62,8 @@
           and using
           <div class="highlight">softwares.</div>
           With expertise in HTML, CSS, and JavaScript, I create sleek and
-          user-friendly static websites.<br /><br />i also love playing guitar
+          user-friendly static websites.<br /><br />i also love playing guitar,
+          bass, and drum
         </h1>
       </div>
       <div class="profile">

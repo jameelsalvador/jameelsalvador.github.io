@@ -9,24 +9,29 @@
   box-sizing: border-box;
   color: whitesmoke;
 }
+
 body {
   background-color: rgb(18, 18, 18);
   text-transform: uppercase;
 }
+
 .header {
   display: flex;
   justify-content: center;
   position: relative;
 }
+
 .menu {
   text-decoration: none;
   display: flex;
   gap: 10px;
 }
+
 .list {
   list-style-type: none;
   padding: 20px;
 }
+
 .list a {
   text-decoration: none;
 }
@@ -35,10 +40,12 @@ body {
   display: none;
   position: absolute;
 }
+
 /* Hide the checkbox */
 #check {
   display: none;
 }
+
 /* Your existing styling for the hamburger icon */
 .checkbtn {
   cursor: pointer;
@@ -53,14 +60,17 @@ body {
   height: 90vh;
   position: relative; /* For arrow icon */
 }
+
 .text-home {
   padding: 20px;
   margin: 10px;
 }
+
 .highlight {
   display: inline-block;
   color: lightblue;
 }
+
 .profile-image {
   display: flex;
   justify-content: center;
@@ -72,6 +82,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .profile-text {
   padding: 10px; /* Add padding for spacing */
   margin: 5px; /* Add margin for additional spacing between elements */
@@ -79,19 +90,23 @@ body {
 
   display: none;
 }
+
 .text,
 .profile {
   flex: 1;
   padding: 20px;
 }
+
 .profile-image img {
   width: 500px;
 }
+
 .arrow-icon {
   position: absolute; /* Relative to home-content */
   bottom: 0;
   font-size: 60px;
 }
+
 .close-button {
   display: none;
   position: absolute;
@@ -103,18 +118,21 @@ body {
   grid-template-columns: auto auto;
   height: 100px;
 }
+
 .content-text {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem 1rem;
 }
+
 .content-image {
   padding: 1rem 1rem;
   display: flex;
   justify-content: center;
   padding: 1rem 1rem;
 }
+
 .content-image img {
   width: 500px;
   height: auto;
@@ -171,6 +189,7 @@ body {
   height: 200px;
   border-radius: 20px;
 }
+
 .skill-logo img {
   width: 100px;
   height: auto;
@@ -181,10 +200,12 @@ body {
   .profile-text {
     flex: 1;
   }
+
   .profile-text {
     display: flex;
     flex-direction: column;
   }
+
   .profile-image {
     display: flex;
     justify-content: center;
@@ -196,21 +217,25 @@ body {
     margin: 5px;
     background-color: whitesmoke;
   }
+
   .home-content {
     display: flex;
     flex-direction: column-reverse;
   }
+
   /* project.html */
   .content-container {
     display: grid;
     grid-template-columns: auto;
     height: 100px;
   }
+
   .content-image img {
     width: 500px;
     height: auto;
     border-radius: 10px;
   }
+
   /* skill.html */
   .skill-container {
     display: grid;
@@ -227,6 +252,7 @@ body {
   .text {
     padding: 0;
   }
+
   .skill-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -292,4 +318,50 @@ body {
   }
 
   /* dont go beyond here */
+}
+
+@media screen and (max-width: 360px) {
+  .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .profile-image {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-image img {
+    object-fit: contain;
+  }
+
+  .profile-text {
+    width: 200px;
+  }
+
+  .text {
+    padding: 20px;
+  }
+
+  .content-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .skill-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    height: 100px;
+    height: 200px;
+    width: 330px;
+    border-radius: 20px;
+  }
 }
